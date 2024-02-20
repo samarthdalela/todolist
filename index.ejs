@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todolits</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <center><div style="background-color: aliceblue; margin-top: 10%; font-size: 3vw; padding-top:1% ;padding-bottom:1% ;"  class="list"><%= week %> <%=day%><sup>th</sup> <%= month %> <%= year %>
+    </div>
+        <br><br>
+   <div style="background-color:  aliceblue;" class="list">
+  
+<form action="/" method="post">
+    <input type="text" name="new_item" placeholder="new_item"> <button style="border-radius: 100px;" type="submit">+</button>
+</form>
+<form action="">
+
+    <% for(var i=0;i<ag.length;i++){ %>
+        <input type="checkbox" name=<% ag[i] %>>
+            
+            <%= ag[i] %>
+            
+            <br>
+            <hr>
+        <% } %>
+
+   </div></center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
